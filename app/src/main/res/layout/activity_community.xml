@@ -23,15 +23,58 @@
         android:textStyle="bold" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="New Text"
-        android:id="@+id/textView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:text="Journals of other Dreamers"
+        android:id="@+id/textOtherDreamersJournals"
         android:layout_below="@+id/textDreamFeed"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_marginTop="39dp"
         android:layout_alignRight="@+id/textDreamFeed"
-        android:layout_alignEnd="@+id/textDreamFeed" />
+        android:layout_alignEnd="@+id/textDreamFeed"
+        android:layout_above="@+id/buttonMyJournal" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My Journal"
+        android:id="@+id/buttonMyJournal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="31dp"
+        android:textSize="10sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favourite"
+        android:id="@+id/buttonCommFaves"
+        android:layout_alignBottom="@+id/buttonMyJournal"
+        android:layout_toRightOf="@+id/buttonMyJournal"
+        android:layout_toEndOf="@+id/buttonMyJournal"
+        android:layout_alignTop="@+id/buttonMyJournal"
+        android:textSize="10sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/buttonCommSearch"
+        android:layout_alignBottom="@+id/buttonCommFaves"
+        android:layout_toRightOf="@+id/buttonCommFaves"
+        android:layout_toEndOf="@+id/buttonCommFaves"
+        android:textSize="10sp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Following"
+        android:id="@+id/buttonCommFollowing"
+        android:layout_alignBottom="@+id/buttonCommSearch"
+        android:layout_toRightOf="@+id/buttonCommSearch"
+        android:layout_toEndOf="@+id/buttonCommSearch"
+        android:textSize="10sp" />
 
 </RelativeLayout>

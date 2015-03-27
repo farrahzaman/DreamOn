@@ -1,10 +1,13 @@
 package farrahzaman.dreamon;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import farrahzaman.dreamon.R;
+import android.view.View;
+import android.widget.Button;
+
 
 public class InspirationActivity extends Activity {
 
@@ -12,6 +15,36 @@ public class InspirationActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_inspiration);
+
+        Button buttonPhotosQuotes = (Button) findViewById(R.id.buttonPhotosQuotes);
+        buttonPhotosQuotes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(view.getContext(), PhotosandQuotesActivity.class);
+                startActivity(intent);
+            }
+
+        });
+
+        Button buttonMedia = (Button) findViewById(R.id.buttonMedia);
+        buttonMedia.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (view.getContext(), MediaActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button buttonGuidance = (Button) findViewById(R.id.buttonGuidance);
+        buttonGuidance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent (view.getContext(), GuidanceActivity.class);
+                startActivity(intent);
+            }
+
+        });
+
     }
 
 

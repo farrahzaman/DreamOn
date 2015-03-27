@@ -15,7 +15,7 @@ public class DreamMainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_dream_main);
-
+        //TODO load journal from disc here
         Button homeJournalButton = (Button) findViewById(R.id.homeJournalButton);
 
         homeJournalButton.setOnClickListener(new View.OnClickListener() {

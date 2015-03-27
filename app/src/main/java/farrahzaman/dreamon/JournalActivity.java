@@ -1,12 +1,15 @@
 package farrahzaman.dreamon;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.Date;
 
@@ -14,7 +17,6 @@ import farrahzaman.dreamon.R;
 
 public class JournalActivity extends Activity {
 
-    private JournalData journalData = new JournalData();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -25,7 +27,7 @@ public class JournalActivity extends Activity {
         final EditText textJournalDream = (EditText) findViewById(R.id.textJournalDream);
 
         // get the 'save' button by Id
-        Button buttonSave = (Button) findViewById(R.id.buttonSave);
+        final Button buttonSave = (Button) findViewById(R.id.buttonSave);
 
         buttonSave.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +38,12 @@ public class JournalActivity extends Activity {
                 journal._title = textJournalTitle.getText().toString();
                 journal._dream = textJournalDream.getText().toString();
 
-                journalData.save(journal);
+                JournalData.journalData.save(journal);
+                startActivity(new Intent(JournalActivity.this, DreamMainActivity.class));
+
+
+
+
 
             }
         });

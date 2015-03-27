@@ -4,33 +4,21 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.TextView;
-
-import org.w3c.dom.Text;
-
 import farrahzaman.dreamon.R;
 
-public class CommunityActivity extends Activity {
+public class GuidanceActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_community);
-        TextView textOtherDreamersJournals = (TextView) findViewById(R.id.textOtherDreamersJournals);
-        String text = "";
-        for(Journal journal : JournalData.journalData.findAll()) {
-            text = text + journal.getDate() + ", " + journal.getTitle() + "\n" + journal.getDream() + "\n\n";
-        }
-        textOtherDreamersJournals.setText(text);
+        setContentView(R.layout.activity_guidance);
     }
-
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.community, menu);
+        getMenuInflater().inflate(R.menu.guidance, menu);
         return true;
     }
 

@@ -28,6 +28,18 @@
             android:name=".CommunityActivity"
             android:label="@string/title_activity_community" >
         </activity>
+        <activity
+            android:name=".PhotosandQuotesActivity"
+            android:label="@string/title_activity_photosand_quotes" >
+        </activity>
+        <activity
+            android:name=".MediaActivity"
+            android:label="@string/title_activity_media" >
+        </activity>
+        <activity
+            android:name=".GuidanceActivity"
+            android:label="@string/title_activity_guidance" >
+        </activity>
     </application>
 
 </manifest>

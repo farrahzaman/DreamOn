@@ -7,6 +7,7 @@ import java.util.List;
  * Created by farrahzaman on 26/03/15.
  */
 public class JournalData {
+    public static JournalData journalData = new JournalData();
     private int nextJournalId = 1;
     private List<Journal> journals = new ArrayList<Journal>();
 
@@ -28,6 +29,7 @@ public class JournalData {
                 }
             }
         }
+        //TODO saveJournal();
         return journal;
     }
 
