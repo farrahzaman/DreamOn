@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Dream On</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_journal">Dream Journal</string>
+    <string name="title_activity_inspiration">Inspiration</string>
+    <string name="title_activity_community">Dreaming Community</string>
+
+</resources>
