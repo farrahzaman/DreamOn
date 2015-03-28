@@ -39,6 +39,7 @@ public class JournalActivity extends Activity {
                 journal._dream = textJournalDream.getText().toString();
 
                 JournalData.journalData.save(journal);
+                JournalData.journalData.saveToFile(JournalActivity.this);
                 startActivity(new Intent(JournalActivity.this, DreamMainActivity.class));
 
 

@@ -17,6 +17,7 @@ public class CommunityActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_community);
+        JournalData.journalData.readFromFile(this);
         TextView textOtherDreamersJournals = (TextView) findViewById(R.id.textOtherDreamersJournals);
         String text = "";
         for(Journal journal : JournalData.journalData.findAll()) {
