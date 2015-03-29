@@ -1,6 +1,7 @@
 package farrahzaman.dreamon;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
@@ -8,6 +9,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import org.w3c.dom.Text;
 
@@ -40,6 +42,23 @@ public class CommunityActivity extends Activity {
             }
 
          });
+
+        Button buttonCommFaves = (Button) findViewById(R.id.buttonCommFaves);
+        buttonCommFaves.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Context context = getApplicationContext();
+                CharSequence text = "Saved to Favourites";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+
+
+            }
+        });
+
 
     }
 
