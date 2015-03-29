@@ -56,8 +56,21 @@
         android:text="Building a Community of Dreamers"
         android:id="@+id/textView2"
         android:textSize="15sp"
-        android:layout_centerVertical="true"
+        android:textStyle="bold|italic"
+        android:layout_above="@+id/homeJournalButton"
         android:layout_centerHorizontal="true"
-        android:textStyle="bold|italic" />
+        android:layout_marginBottom="85dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/maincloud"
+        android:id="@+id/imageView"
+        android:layout_above="@+id/textView"
+        android:layout_toEndOf="@+id/homeInspireButton"
+        android:layout_alignRight="@+id/homeCommButton"
+        android:layout_alignEnd="@+id/homeCommButton"
+        android:layout_alignLeft="@+id/homeCommButton"
+        android:layout_alignStart="@+id/homeCommButton" />
 
 </RelativeLayout>

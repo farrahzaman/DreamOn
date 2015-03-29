@@ -1,6 +1,7 @@
 package farrahzaman.dreamon;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -43,13 +44,36 @@ public class JournalActivity extends Activity {
                 startActivity(new Intent(JournalActivity.this, DreamMainActivity.class));
 
 
+                Context context = getApplicationContext();
+                CharSequence text = "Saved";
+                int duration = Toast.LENGTH_SHORT;
 
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
 
 
             }
+
+        });
+
+        Button buttonFavourite = (Button) findViewById(R.id.buttonFavourite);
+        buttonFavourite.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Context context = getApplicationContext();
+                CharSequence text = "Saved to Favourites";
+                int duration = Toast.LENGTH_SHORT;
+
+                Toast toast = Toast.makeText(context, text, duration);
+                toast.show();
+            }
+
+
         });
 
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {

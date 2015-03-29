@@ -8,6 +8,31 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="farrahzaman.dreamon.CommunityActivity">
 
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignRight="@+id/textDreamFeed"
+        android:layout_alignEnd="@+id/textDreamFeed"
+        android:layout_below="@+id/textDreamFeed"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/buttonMyJournal">
+
+        <TextView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:text="Journals of other Dreamers"
+            android:id="@+id/textOtherDreamersJournals"
+            android:layout_below="@+id/textDreamFeed"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="39dp"
+            android:layout_alignRight="@+id/textDreamFeed"
+            android:layout_alignEnd="@+id/textDreamFeed"
+            android:layout_above="@+id/buttonMyJournal" />
+    </ScrollView>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -22,29 +47,15 @@
         android:textColor="#FFA5A5A5"
         android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:text="Journals of other Dreamers"
-        android:id="@+id/textOtherDreamersJournals"
-        android:layout_below="@+id/textDreamFeed"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="39dp"
-        android:layout_alignRight="@+id/textDreamFeed"
-        android:layout_alignEnd="@+id/textDreamFeed"
-        android:layout_above="@+id/buttonMyJournal" />
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="My Journal"
+        android:text="Journal"
         android:id="@+id/buttonMyJournal"
+        android:textSize="10sp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="31dp"
-        android:textSize="10sp" />
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"

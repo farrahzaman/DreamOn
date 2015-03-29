@@ -1,10 +1,12 @@
 package farrahzaman.dreamon;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.w3c.dom.Text;
@@ -20,13 +22,26 @@ public class CommunityActivity extends Activity {
         JournalData.journalData.readFromFile(this);
         TextView textOtherDreamersJournals = (TextView) findViewById(R.id.textOtherDreamersJournals);
         String text = "";
-        for(Journal journal : JournalData.journalData.findAll()) {
+        for (Journal journal : JournalData.journalData.findAll()) {
             text = text + journal.getDate() + ", " + journal.getTitle() + "\n" + journal.getDream() + "\n\n";
         }
         textOtherDreamersJournals.setText(text);
+
+
+        Button buttonMyJournal = (Button) findViewById(R.id.buttonMyJournal);
+
+        buttonMyJournal.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent(view.getContext(), JournalActivity.class);
+                startActivity(intent);
+
+            }
+
+         });
+
     }
-
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
