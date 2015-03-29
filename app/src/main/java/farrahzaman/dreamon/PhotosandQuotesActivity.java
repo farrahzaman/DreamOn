@@ -20,8 +20,10 @@ public class PhotosandQuotesActivity extends Activity {
     public void changeImage(View v) {
         ImageView inspirationImageView = (ImageView) findViewById(R.id.inspirationImage);
         if (imageResourceId == R.drawable.mosswoman) {
-            imageResourceId = R.drawable.cloudbaby;
-        } else if (imageResourceId == R.drawable.cloudbaby) {
+            imageResourceId = R.drawable.lawrenceocean;
+        } else if (imageResourceId == R.drawable.lawrenceocean) {
+            imageResourceId = R.drawable.kaufmanbeach;
+        } else if (imageResourceId == R.drawable.kaufmanbeach) {
             imageResourceId = R.drawable.mosswoman;
         }
         inspirationImageView.setBackgroundResource(imageResourceId);
