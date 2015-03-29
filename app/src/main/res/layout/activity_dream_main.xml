@@ -64,13 +64,10 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/maincloud"
+        android:background="@drawable/cloudicon"
         android:id="@+id/imageView"
         android:layout_above="@+id/textSearchDream"
-        android:layout_toEndOf="@+id/homeInspireButton"
-        android:layout_alignRight="@+id/homeCommButton"
-        android:layout_alignEnd="@+id/homeCommButton"
-        android:layout_alignLeft="@+id/homeCommButton"
-        android:layout_alignStart="@+id/homeCommButton" />
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
