@@ -17,19 +17,19 @@
         android:layout_below="@+id/textDreamFeed"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_above="@+id/buttonMyJournal">
+        android:layout_above="@+id/buttonMyJournal"
+        android:fillViewport="false">
 
         <TextView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="300dp"
+            android:layout_height="500dp"
             android:text="Journals of other Dreamers"
             android:id="@+id/textOtherDreamersJournals"
-            android:layout_below="@+id/textDreamFeed"
+            android:layout_marginTop="42dp"
+            android:textColor="#ff1272a5"
+            android:layout_alignTop="@+id/scrollView"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_marginTop="39dp"
-            android:layout_alignRight="@+id/textDreamFeed"
-            android:layout_alignEnd="@+id/textDreamFeed"
             android:layout_above="@+id/buttonMyJournal" />
     </ScrollView>
 

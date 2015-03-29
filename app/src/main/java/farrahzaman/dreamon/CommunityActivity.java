@@ -23,7 +23,7 @@ public class CommunityActivity extends Activity {
         TextView textOtherDreamersJournals = (TextView) findViewById(R.id.textOtherDreamersJournals);
         String text = "";
         for (Journal journal : JournalData.journalData.findAll()) {
-            text = text + journal.getDate() + ", " + journal.getTitle() + "\n" + journal.getDream() + "\n\n";
+            text = text + journal.getDate() + " | " + journal.getTitle() + "\n" + journal.getDream() + "\n\n";
         }
         textOtherDreamersJournals.setText(text);
 

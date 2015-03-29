@@ -40,6 +40,10 @@
             android:name=".GuidanceActivity"
             android:label="@string/title_activity_guidance" >
         </activity>
+        <activity
+            android:name=".SearchDreamActivity"
+            android:label="@string/title_activity_search_dream" >
+        </activity>
     </application>
 
 </manifest>

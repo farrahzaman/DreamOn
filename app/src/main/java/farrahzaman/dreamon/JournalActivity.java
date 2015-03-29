@@ -72,7 +72,19 @@ public class JournalActivity extends Activity {
 
         });
 
-    }
+        Button buttonSearch = (Button) findViewById(R.id.buttonSearch);
+        buttonSearch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent intent = new Intent (view.getContext(),SearchDreamActivity.class);
+                startActivity(intent);
+
+            }
+        });
+
+            }
+
 
 
     @Override
