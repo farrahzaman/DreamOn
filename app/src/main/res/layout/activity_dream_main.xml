@@ -10,50 +10,15 @@
     android:background="@android:color/white">
 
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Journal"
-        android:id="@+id/homeJournalButton"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="52dp"
-        android:background="#ffffb854"
-        android:textColor="#ffffffff" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Inspiration"
-        android:id="@+id/homeInspireButton"
-        android:layout_toEndOf="@+id/homeJournalButton"
-        android:background="#ffffb854"
-        android:textColor="#ffffffff"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/homeJournalButton" />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Community"
-        android:id="@+id/homeCommButton"
-        android:layout_toEndOf="@+id/homeInspireButton"
-        android:textColor="#ffffffff"
-        android:background="#ffffb854"
-        android:layout_toStartOf="@+id/buttonFaves"
-        android:layout_alignTop="@+id/homeJournalButton"
-        android:layout_toLeftOf="@+id/buttonFaves" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Dream on Dreamer"
+        android:text="Dream on\nDreamer"
         android:id="@+id/textSearchDream"
         android:layout_above="@+id/textView2"
-        android:layout_toRightOf="@+id/homeJournalButton"
-        android:layout_toEndOf="@+id/homeJournalButton"
+        android:layout_centerHorizontal="true"
         android:textSize="35sp"
         android:textColor="#FFA5A5A5" />
 
@@ -65,9 +30,9 @@
         android:id="@+id/textView2"
         android:textSize="15sp"
         android:textStyle="bold|italic"
-        android:layout_above="@+id/homeJournalButton"
+        android:layout_above="@+id/layoutButtons"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="85dp" />
+        android:layout_marginBottom="150dp" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -76,17 +41,60 @@
         android:id="@+id/imageView"
         android:layout_above="@+id/textSearchDream"
         android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="50dp"/>
 
-    <Button
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Favourites"
-        android:id="@+id/buttonFaves"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/textSearchDream"
-        android:layout_alignEnd="@+id/textSearchDream"
-        android:textColor="#ffffffff"
-        android:background="#ffffb854" />
+        android:id="@+id/layoutButtons"
+        >
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Journal"
+            android:id="@+id/homeJournalButton"
+            android:background="#ffffb854"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/buttons_text_size"
+            android:padding="@dimen/buttons_padding"
+            />
 
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Inspiration"
+            android:id="@+id/homeInspireButton"
+            android:background="#ffffb854"
+            android:textColor="#ffffffff"
+            android:textSize="@dimen/buttons_text_size"
+            android:padding="@dimen/buttons_padding"
+            android:layout_marginLeft="@dimen/buttons_margin_left"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Community"
+            android:id="@+id/homeCommButton"
+            android:textColor="#ffffffff"
+            android:background="#ffffb854"
+            android:textSize="@dimen/buttons_text_size"
+            android:padding="@dimen/buttons_padding"
+            android:layout_marginLeft="@dimen/buttons_margin_left"
+            />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favourites"
+            android:id="@+id/buttonFaves"
+            android:textColor="#ffffffff"
+            android:background="#ffffb854"
+            android:textSize="@dimen/buttons_text_size"
+            android:padding="@dimen/buttons_padding"
+            android:layout_marginLeft="@dimen/buttons_margin_left"
+            />
+    </LinearLayout>
 </RelativeLayout>
