@@ -29,7 +29,6 @@
         android:id="@+id/homeInspireButton"
         android:layout_toEndOf="@+id/homeJournalButton"
         android:background="#ffffb854"
-        android:elegantTextHeight="false"
         android:textColor="#ffffffff"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/homeJournalButton" />
