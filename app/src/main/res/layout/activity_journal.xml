@@ -11,53 +11,60 @@
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/textJournalDate"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textColor="#ff010103"
-        android:hint="Post date"
-        android:textColorHint="#ffa5a5a5"
-        android:textIsSelectable="false" />
-
-    <EditText
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/textJournalTitle"
+        android:textColor="#ff1272a5"
+        android:hint="Post title"
+        android:textColorHint="#ffa5a5a5"
         android:layout_below="@+id/textJournalDate"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/textJournalDate"
-        android:layout_alignEnd="@+id/textJournalDate"
-        android:textColor="#ff1272a5"
-        android:hint="Post title"
-        android:textColorHint="#ffa5a5a5" />
+        android:layout_alignEnd="@+id/textJournalDate" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textJournalDream"
+        android:textColor="#ff313131"
+        android:hint="Share your dream here..."
+        android:textColorHint="#ffa5a5a5"
         android:layout_below="@+id/textJournalTitle"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignRight="@+id/textJournalTitle"
-        android:layout_alignEnd="@+id/textJournalTitle"
-        android:textColor="#ff313131"
-        android:hint="Share your dream here..."
-        android:textColorHint="#ffa5a5a5" />
+        android:layout_alignEnd="@+id/textJournalTitle" />
 
-    <Button
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/journalmic"
+        android:id="@+id/imageButtonMic"
+        android:layout_marginBottom="26dp"
+        android:layout_above="@+id/layoutButtons"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutButtons"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
         style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"
         android:id="@+id/buttonSave"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginBottom="44dp" />
+        android:textSize="12sp"
+        android:padding="@dimen/buttons_padding"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="44dp"
+        android:background="#ffa7daff"
+        android:clickable="false"
+        android:textColor="#ffffff" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -65,9 +72,11 @@
         android:layout_height="wrap_content"
         android:text="Favourite"
         android:id="@+id/buttonFavourite"
-        android:layout_alignTop="@+id/buttonSave"
-        android:layout_toRightOf="@+id/buttonSave"
-        android:layout_toEndOf="@+id/buttonSave" />
+        android:textSize="12sp"
+        android:padding="@dimen/buttons_padding"
+        android:layout_marginLeft="25dp"
+        android:background="#ffa7daff"
+        android:textColor="#ffffff" />
 
     <Button
         style="?android:attr/buttonStyleSmall"
@@ -75,17 +84,38 @@
         android:layout_height="wrap_content"
         android:text="Share"
         android:id="@+id/buttonShare"
-        android:layout_toEndOf="@+id/buttonFavourite"
-        android:layout_alignTop="@+id/buttonFavourite"
-        android:layout_centerHorizontal="true" />
+        android:textSize="12sp"
+        android:padding="@dimen/buttons_padding"
+        android:layout_marginLeft="25dp"
+        android:background="#ffa7daff"
+        android:textColor="#ffffff" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Search"
         android:id="@+id/buttonSearch"
-        android:layout_alignTop="@+id/buttonShare"
-        android:layout_toRightOf="@+id/buttonShare"
-        android:layout_toEndOf="@+id/buttonShare" />
+        android:textSize="12sp"
+        android:padding="@dimen/buttons_padding"
+        android:layout_marginLeft="25dp"
+        android:background="#ffa7daff"
+        android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/textJournalDate"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/layoutButtons"
+        android:layout_alignEnd="@+id/layoutButtons"
+        android:hint="Post date"
+        android:textColorHint="#ffa5a5a5"
+        android:textColor="#ff1f1f1f" />
+
 
 </RelativeLayout>
