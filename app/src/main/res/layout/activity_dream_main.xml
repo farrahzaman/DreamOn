@@ -15,11 +15,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Dream on\nDreamer"
+        android:text="Dream on:\nDreamer"
         android:id="@+id/textSearchDream"
         android:layout_above="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:textSize="35sp"
+        android:textSize="30sp"
         android:textColor="#FFA5A5A5" />
 
     <TextView
@@ -42,7 +42,7 @@
         android:layout_above="@+id/textSearchDream"
         android:layout_alignParentRight="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginRight="50dp"/>
+        android:layout_marginRight="65dp" />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -57,8 +57,9 @@
             android:id="@+id/homeJournalButton"
             android:background="#ffffb854"
             android:textColor="#ffffffff"
-            android:textSize="@dimen/buttons_text_size"
+            android:textSize="12sp"
             android:padding="@dimen/buttons_padding"
+            android:layout_marginLeft="10dp"
             />
 
         <Button
@@ -68,9 +69,9 @@
             android:id="@+id/homeInspireButton"
             android:background="#ffffb854"
             android:textColor="#ffffffff"
-            android:textSize="@dimen/buttons_text_size"
+            android:textSize="12sp"
             android:padding="@dimen/buttons_padding"
-            android:layout_marginLeft="@dimen/buttons_margin_left"
+            android:layout_marginLeft="10dp"
             />
 
         <Button
@@ -80,7 +81,7 @@
             android:id="@+id/homeCommButton"
             android:textColor="#ffffffff"
             android:background="#ffffb854"
-            android:textSize="@dimen/buttons_text_size"
+            android:textSize="12sp"
             android:padding="@dimen/buttons_padding"
             android:layout_marginLeft="@dimen/buttons_margin_left"
             />
@@ -92,9 +93,9 @@
             android:id="@+id/buttonFaves"
             android:textColor="#ffffffff"
             android:background="#ffffb854"
-            android:textSize="@dimen/buttons_text_size"
+            android:textSize="12sp"
             android:padding="@dimen/buttons_padding"
-            android:layout_marginLeft="@dimen/buttons_margin_left"
+            android:layout_marginLeft="10dp"
             />
     </LinearLayout>
 </RelativeLayout>
