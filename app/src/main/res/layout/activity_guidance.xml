@@ -8,4 +8,92 @@
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="farrahzaman.dreamon.GuidanceActivity">
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:background="@drawable/sixeasysteps1"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView2"
+        android:background="@drawable/sixeasysteps2"
+        android:layout_below="@+id/imageView"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:id="@+id/imageView3"
+        android:background="@drawable/sixeasysteps33"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layoutButtons"
+        >
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/button"
+        android:textSize="12sp"
+        android:padding="@dimen/buttons_padding"
+        android:background="#ffa7daff"
+        android:clickable="false"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20dp"/>
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Favourite"
+        android:id="@+id/button2"
+        android:textSize="12sp"
+        android:padding="@dimen/buttons_padding"
+        android:background="#ffa7daff"
+        android:textColor="#ffffff"
+        android:layout_toEndOf="@+id/button"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Share"
+        android:id="@+id/button3"
+        android:textSize="12sp"
+        android:padding="@dimen/buttons_padding"
+        android:background="#ffa7daff"
+        android:textColor="#ffffff"
+        android:layout_toEndOf="@+id/button2"
+        android:layout_marginLeft="20dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:id="@+id/button5"
+        android:textSize="12sp"
+        android:padding="@dimen/buttons_padding"
+        android:background="#ffa7daff"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentBottom="true" />
+
+    </LinearLayout>
+
 </RelativeLayout>

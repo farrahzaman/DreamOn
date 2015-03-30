@@ -12,80 +12,89 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/scrollView"
-        android:layout_alignRight="@+id/textDreamFeed"
-        android:layout_alignEnd="@+id/textDreamFeed"
-        android:layout_below="@+id/textDreamFeed"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_above="@+id/buttonMyJournal"
+        android:layout_alignParentStart="false"
         android:fillViewport="false">
 
         <TextView
-            android:layout_width="300dp"
-            android:layout_height="500dp"
-            android:text="Journals of other Dreamers"
-            android:id="@+id/textOtherDreamersJournals"
-            android:layout_marginTop="42dp"
-            android:textColor="#ff1272a5"
-            android:layout_alignTop="@+id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dreamers... Dream feed"
+            android:id="@+id/textDreamFeed"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true"
-            android:layout_above="@+id/buttonMyJournal" />
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:textSize="15sp"
+            android:textColor="#ffffb854"
+            android:textStyle="bold"
+            android:typeface="normal" />
     </ScrollView>
 
-    <TextView
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dream Feed"
-        android:id="@+id/textDreamFeed"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true"
-        android:textSize="15sp"
-        android:textColor="#FFA5A5A5"
-        android:textStyle="bold" />
+        android:layout_alignParentBottom="true"
+        android:id="@+id/layoutButtons"
+        >
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Journal"
         android:id="@+id/buttonMyJournal"
-        android:textSize="10sp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:textSize="12sp"
+        android:padding="@dimen/buttons_padding"
+        android:layout_marginLeft="15dp"
+        android:background="#ffffb854"
+        android:textColor="#ffffff" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Favourite"
         android:id="@+id/buttonCommFaves"
-        android:layout_alignBottom="@+id/buttonMyJournal"
-        android:layout_toRightOf="@+id/buttonMyJournal"
-        android:layout_toEndOf="@+id/buttonMyJournal"
-        android:layout_alignTop="@+id/buttonMyJournal"
-        android:textSize="10sp" />
+        android:textSize="12sp"
+        android:padding="@dimen/buttons_padding"
+        android:layout_marginLeft="15dp"
+        android:background="#ffffb854"
+        android:textColor="#ffffff" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Search"
         android:id="@+id/buttonCommSearch"
-        android:layout_alignBottom="@+id/buttonCommFaves"
-        android:layout_toRightOf="@+id/buttonCommFaves"
-        android:layout_toEndOf="@+id/buttonCommFaves"
-        android:textSize="10sp" />
+        android:textSize="12sp"
+        android:padding="@dimen/buttons_padding"
+        android:layout_marginLeft="15dp"
+        android:background="#ffffb854"
+        android:textColor="#ffffff" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Following"
         android:id="@+id/buttonCommFollowing"
-        android:layout_alignBottom="@+id/buttonCommSearch"
-        android:layout_toRightOf="@+id/buttonCommSearch"
-        android:layout_toEndOf="@+id/buttonCommSearch"
-        android:textSize="10sp" />
+        android:textSize="12sp"
+        android:padding="@dimen/buttons_padding"
+        android:layout_marginLeft="15dp"
+        android:background="#ffffb854"
+        android:textColor="#ffffff" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="500dp"
+        android:text="Journals of other Dreamers"
+        android:id="@+id/textOtherDreamersJournals"
+        android:textColor="#ff1272a5"
+        android:layout_below="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/layoutButtons"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
