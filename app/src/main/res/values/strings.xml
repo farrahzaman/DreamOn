@@ -11,5 +11,6 @@
     <string name="title_activity_media">Media</string>
     <string name="title_activity_guidance">Guidance</string>
     <string name="title_activity_search_dream">Search Dreams</string>
+    <string name="title_activity_favourites">Favourites</string>
 
 </resources>
